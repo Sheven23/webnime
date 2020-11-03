@@ -6,7 +6,7 @@
 
 ## What is Webnime?
 
-Webnime merupakan situs penyedia Anime Bajakan No.1 di Indonesia
+Webnime merupakan situs penyedia Anime Bajakan No.1 di Indonesia<br>
 Situs ini diharapkan dapat menjadi jawaban atas segala doa buat teman-teman pencinta Anime di Indonesia
 
 ## Team
