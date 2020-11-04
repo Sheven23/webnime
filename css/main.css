@@ -1,0 +1,233 @@
+/*!
+  * Front-end Anidesu
+  * Designer: Yoga Pratama
+  * Updated at 2020-11-04 23:59:00
+  *
+  * Copyright (c) 2020 Yoga Pratama
+  * Licensed under the MIT license
+ */
+
+body {
+  background: #121212;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.header {
+  background: #121212;
+  border-bottom: 2px solid #212121;
+  height: 64px;
+  left: 0;
+  max-width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.header .row.first,
+.header .row.second {
+  padding: 0 2.0rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header .row.first {
+  height: 64px;
+  justify-content: space-between;
+}
+
+.header .row.first .column {
+  height: 30px;
+  padding: 0 1rem;
+}
+
+.header .row.second {
+  background: #212121;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.column.column-0 {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.search {
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.search-label,
+.search-btn {
+  position: absolute;
+}
+
+.search .search-label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.search .search-input {
+  background-color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  color: #b5b5b5;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  min-width: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.search input.search-input:focus {
+  border-color: #424242;
+}
+
+.search .search-input {
+  height: 30px;
+  margin: 0;
+  padding-left: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search .search-btn {
+  left: 0;
+  margin: 0;
+  padding: 0 1.5rem;
+  top: 0;
+  z-index: 1;
+}
+
+.search .search-btn,
+.button.menu-toggle {
+  background: 0 0;
+  border: none;
+  height: 30px;
+}
+
+.button.menu-toggle {
+  border-radius: 0;
+  padding: 0 0.5rem;
+  margin-bottom: 0;
+}
+
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: transparent;
+  color: inherit;
+}
+
+.search-btn,
+.search-icon {
+  display: flex;
+}
+
+.search-icon {
+  color: #424242;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav.navbar-right {
+  float: right;
+}
+
+.nav>li>a {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar>li {
+  margin: 0;
+}
+
+.navbar>li>a {
+  font-weight: 400;
+  color: #b5b5b5;
+}
+
+.navbar-light>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ccc;
+}
+
+.navbar-light>li>a:hover {
+  color: #fff;
+}
+
+.row .column.desktop-only {
+  display: none;
+}
+
+.auto-hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width: 40rem) {
+
+  .auto-hide {
+    display: block;
+  }
+
+  .header .row.second {
+    padding: 0 1rem;
+  }
+
+  .header .row.second {
+    background: #0c70de;
+  }
+
+  .header .row.first {
+    justify-content: flex-start;
+  }
+
+  .row .column.search-form {
+    flex: 0 0 320px;
+    max-width: 320px;
+  }
+
+  .row .column.mobile-only {
+    display: none;
+  }
+
+  .row .column.desktop-only {
+    display: block;
+  }
+
+  .navbar>li {
+    float: left;
+  }
+}
