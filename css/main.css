@@ -11,8 +11,10 @@ body {
   background: #121212;
 }
 
-.no-padding {
+.container.no-padding {
   padding: 0;
+  margin: unset;
+  max-width: unset;
 }
 
 .header {
