@@ -1,7 +1,7 @@
 /*!
   * Front-end Anidesu
   * Designer: Yoga Pratama
-  * Updated at 2020-11-05 14:12:00
+  * Updated at 2020-11-16 17:15:00
   *
   * Copyright (c) 2020 Yoga Pratama
   * Licensed under the MIT license
@@ -11,10 +11,29 @@
    background: #121212;
  }
 
+ table {
+   text-align: center;
+   display: table;
+ }
+
+ thead {
+   background: #333;
+ }
+
+ td, th {
+   color: #ccc;
+   border-bottom: none;
+ }
+
  .container.no-padding {
    padding: 0;
    margin: unset;
    max-width: unset;
+ }
+
+ .row .column.column-30 {
+   flex: 0 0 30%;
+   max-width: 30%;
  }
 
  .header {
@@ -206,8 +225,10 @@
    padding-bottom: 60px;
  }
 
- .sections-wrapper .row .column.column-60,
- .sections-wrapper .row .column.column-40 {
+ .detail.section .row .column.column-80,
+ .detail.section .row .column.column-20,
+ .sections-wrapper .row .column.column-70,
+ .sections-wrapper .row .column.column-30 {
    flex: 1 1 auto;
    max-width: 100%;
  }
@@ -219,12 +240,28 @@
    border-radius: 4px;
  }
 
- .section-title {
+ .section-title,
+ .section-footer {
    padding: 10px 15px;
+ }
+
+ .section-title {
    border-bottom: 1px solid #333;
  }
 
- .section-title h3 {
+ .section-footer {
+   background: #292929;
+   text-align: center;
+ }
+
+ .section-footer a {
+   color: #ccc;
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .section-title h3,
+ .section-title h2 {
    color: #fff;
    margin-bottom: 0;
    font-size: 18px;
@@ -232,8 +269,23 @@
    letter-spacing: .01em;
  }
 
+ .section-title h2 {
+   margin-bottom: 5px;
+ }
+
+ .sysnopsis {
+   color: #ccc;
+   margin-bottom: 10px;
+   font-size: 16px;
+   font-weight: 400;
+ }
+
  .section-inner {
    padding: 15px;
+ }
+
+ .section-inner p {
+   color: #888;
  }
 
  /* Post Section */
@@ -281,9 +333,40 @@
    position: absolute;
    top: 0;
  }
+
+ .thumb {
+   padding: 10px;
+ }
+
+ .detail.section .column.column-20 {
+   display: flex;
+   justify-content: center;
+ }
+
+ .post-meta {
+   font-style: italic;
+   font-size: 14px;
+ }
+
+ .mr-5 {
+   margin-right: 5px;
+ }
+
+ .mr-10 {
+   margin-right: 10px;
+ }
+
+ /*
+ .detail.section .section-left,
+ .detail.section .section-right {
+   display: table-cell;
+   vertical-align: top;
+ }
+ */
+
  /* Post Section */
 
- @media (max-width: 360px) {
+ @media (max-width: 414px) {
    .post-outer {
      width: 50%;
    }
@@ -332,14 +415,24 @@
      padding-top: 130px;
    }
 
-   .sections-wrapper .row .column.column-60 {
-     flex: 0 0 60%;
-     max-width: 60%;
+   .detail.section .row .column.column-80 {
+     flex: 0 0 80%;
+     max-width: 80%;
    }
 
-   .sections-wrapper .row .column.column-40 {
-     flex: 0 0 40%;
-     max-width: 40%;
+   .sections-wrapper .row .column.column-70 {
+     flex: 0 0 70%;
+     max-width: 70%;
+   }
+
+   .sections-wrapper .row .column.column-30 {
+     flex: 0 0 30%;
+     max-width: 30%;
+   }
+
+   .detail.section .row .column.column-20 {
+     flex: 0 0 20%;
+     max-width: 20%;
    }
 
  }
